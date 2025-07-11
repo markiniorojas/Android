@@ -1,10 +1,3 @@
-
-//import the screens
-import HomeScreen from './../screens/homeScreen'
-import DetailsScreen from './../screens/detailsScreen'
-import StacksScreen from './../screens/stacksScreen'
-import SettingScreen from './../screens/settingScreen'
-
 //icons
 import Entypo from '@expo/vector-icons/Entypo';
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
@@ -63,10 +56,10 @@ function MyTabs(){
 }
 
 //Stacks
-function MyStacks(){
+function FormStacks(){
     return(
         <HomeStackNavigator.Navigator initialRouteName='Home'>
-            <HomeStackNavigator.Screen name="Home" component={HomeScreen }/>
+            <HomeStackNavigator.Screen name="Home" component={HomeScreen }/>        
             <HomeStackNavigator.Screen name="Stack" component={StacksScreen }/>
             <HomeStackNavigator.Screen name="Detaills" component={DetailsScreen }/>
         </HomeStackNavigator.Navigator>
